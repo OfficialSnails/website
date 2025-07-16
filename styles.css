@@ -1,19 +1,23 @@
+/* Style the outer card container */
 .awesomeTable-visualization-cards .card {
-    border: 1px solid #fff !important; /* thin white border around the box */
+    border: 1px solid #fff !important; /* thin white border */
     border-radius: 10px !important;
+    overflow: hidden;
 }
 
+/* Style the inner content */
 .awesomeTable-visualization-cards .card-content {
-    background-color: #000 !important; /* black background */
-    color: #fff !important; /* white text */
+    background-color: #000 !important;
+    color: #fff !important;
     font-size: 16px !important;
-    border-radius: 10px !important;
+    border-radius: 0px !important; /* we want the border to handle corners */
     padding: 12px !important;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5) !important;
+    box-shadow: none !important;
     transition: transform 0.3s ease, background-color 0.3s ease !important;
 }
 
-.awesomeTable-visualization-cards .card-content:hover {
+/* Hover effect */
+.awesomeTable-visualization-cards .card:hover .card-content {
     transform: scale(1.05) !important;
     background-color: #111 !important;
 }
