@@ -1,22 +1,23 @@
-/* Card background & base */
-div.awesomeTable-visualization-cards div.card div.card-content {
-  background-color: #000 !important;
-  color: #fff !important;
-  font-size: 16px !important;
-  border-radius: 12px !important;
-  padding: 12px !important;
-  box-shadow: 0 0 12px rgba(0,0,0,0.4) !important;
-  transition: transform 0.3s ease, background-color 0.3s ease !important;
+/* Reset all card borders and background */
+.awesomeTable-visualization-cards .card-content {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 12px !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
 }
 
-/* Hover effect */
-div.awesomeTable-visualization-cards div.card:hover div.card-content {
-  transform: scale(1.05) !important;
-  background-color: #111 !important;
+/* Reset inner links to white */
+.awesomeTable-visualization-cards .card-content a {
+    color: #fff !important;
+    text-decoration: none !important;
 }
 
-/* Force text & link color inside card to white */
-div.awesomeTable-visualization-cards div.card div.card-content * {
-  color: #fff !important;
-  text-decoration: none !important;
+/* Hover: subtle grey */
+.awesomeTable-visualization-cards .card:hover .card-content {
+    background-color: #111 !important;
+    transform: scale(1.02) !important;
+    color: #fff !important;
 }
