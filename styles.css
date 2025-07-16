@@ -5,21 +5,11 @@
     border-radius: 2px;
     padding: 12px !important;
     box-shadow: none !important;
-    transition: transform 0.3s ease, background-color 0.3s ease !important;
-    border: 1px solid #fff;
+    border: 1px solid #fff !important;
 }
 
-/* Make sure the text links are white */
-.awesomeTable-visualization-cards .card-content a,
-.awesomeTable-visualization-cards .card-content a:visited,
-.awesomeTable-visualization-cards .card-content a:hover,
-.awesomeTable-visualization-cards .card-content a:active {
-    color: #fff !important;
-    text-decoration: none !important;
-}
-
-/* Optional: hover effect */
+/* Optional: hover effect (keep subtle or remove if unwanted) */
 .awesomeTable-visualization-cards .card:hover .card-content {
-    transform: scale(1.05) !important;
+    transform: scale(1.02) !important;
     background-color: #111 !important;
 }
