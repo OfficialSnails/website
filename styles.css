@@ -1,23 +1,22 @@
-/* Style the outer card container */
+/* Outer card: white border, rounded */
 .awesomeTable-visualization-cards .card {
-    border: 1px solid #fff !important; /* thin white border */
+    border: 1px solid #fff !important;
     border-radius: 10px !important;
     overflow: hidden;
 }
 
-/* Style the inner content */
+/* Inner content: black background, white text */
 .awesomeTable-visualization-cards .card-content {
     background-color: #000 !important;
     color: #fff !important;
     font-size: 16px !important;
-    border-radius: 0px !important; /* we want the border to handle corners */
     padding: 12px !important;
-    box-shadow: none !important;
     transition: transform 0.3s ease, background-color 0.3s ease !important;
 }
 
-/* Hover effect */
+/* Hover: darker background, white text stays */
 .awesomeTable-visualization-cards .card:hover .card-content {
     transform: scale(1.05) !important;
     background-color: #111 !important;
+    color: #fff !important;
 }
