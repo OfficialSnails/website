@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 
-/* Inner content: black background, white text */
+/* Inner content: black background, white text (applies to content) */
 .awesomeTable-visualization-cards .card-content {
     background-color: #000 !important;
     color: #fff !important;
@@ -14,9 +14,14 @@
     transition: transform 0.3s ease, background-color 0.3s ease !important;
 }
 
-/* Hover: darker background, white text stays */
+/* Force all text inside card to be white */
+.awesomeTable-visualization-cards .card-content *,
+.awesomeTable-visualization-cards .card:hover .card-content * {
+    color: #fff !important;
+}
+
+/* Hover effect */
 .awesomeTable-visualization-cards .card:hover .card-content {
     transform: scale(1.05) !important;
     background-color: #111 !important;
-    color: #fff !important;
 }
