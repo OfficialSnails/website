@@ -1,3 +1,4 @@
+/* Card container */
 div.awesomeTable-visualization-cards div.card div.card-content {
   background-color: #000 !important;
   color: #fff !important;
@@ -8,19 +9,19 @@ div.awesomeTable-visualization-cards div.card div.card-content {
   transition: transform 0.3s ease, background-color 0.3s ease !important;
 }
 
-/* hover effect */
+/* Hover effect */
 div.awesomeTable-visualization-cards div.card:hover div.card-content {
   transform: scale(1.05) !important;
   background-color: #111 !important;
 }
 
-/* force all links inside cards to white */
+/* 🔷 Force links to white */
 div.awesomeTable-visualization-cards div.card div.card-content a {
   color: #fff !important;
   text-decoration: none !important;
 }
 
-/* optional: keep hover link white */
+/* Optional: white on hover too */
 div.awesomeTable-visualization-cards div.card div.card-content a:hover {
   color: #fff !important;
 }
