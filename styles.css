@@ -1,11 +1,11 @@
-/* Outer card: white border */
+/* Outer card border */
 .awesomeTable-visualization-cards .card {
     border: 1px solid #fff !important;
     border-radius: 10px !important;
     overflow: hidden;
 }
 
-/* Inner card content: black background and white text */
+/* Card content */
 .awesomeTable-visualization-cards .card-content {
     background-color: #000 !important;
     color: #fff !important;
@@ -14,19 +14,17 @@
     transition: transform 0.3s ease, background-color 0.3s ease !important;
 }
 
-/* Make sure all links inside card-content are white */
-.awesomeTable-visualization-cards .card-content a {
+/* Links inside card-content — force white */
+.awesomeTable-visualization-cards .card-content a,
+.awesomeTable-visualization-cards .card-content a:visited,
+.awesomeTable-visualization-cards .card-content a:hover,
+.awesomeTable-visualization-cards .card-content a:active {
     color: #fff !important;
     text-decoration: none !important;
 }
 
-/* On hover: slightly lighter background */
+/* Hover effect */
 .awesomeTable-visualization-cards .card:hover .card-content {
     transform: scale(1.05) !important;
     background-color: #111 !important;
-}
-
-/* Keep links white on hover too */
-.awesomeTable-visualization-cards .card:hover .card-content a {
-    color: #fff !important;
 }
