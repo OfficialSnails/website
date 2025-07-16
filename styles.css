@@ -1,6 +1,6 @@
 div.awesomeTable-visualization-cards div.card div.card-content {
-  background-color: #000 !important;   /* black card */
-  color: #fff !important;              /* white text by default */
+  background-color: #000 !important;
+  color: #fff !important;
   font-size: 16px !important;
   border-radius: 12px !important;
   padding: 12px !important;
@@ -8,12 +8,19 @@ div.awesomeTable-visualization-cards div.card div.card-content {
   transition: transform 0.3s ease, background-color 0.3s ease !important;
 }
 
+/* hover effect */
 div.awesomeTable-visualization-cards div.card:hover div.card-content {
   transform: scale(1.05) !important;
-  background-color: #111 !important;   /* slightly lighter on hover */
+  background-color: #111 !important;
 }
 
+/* force all links inside cards to white */
 div.awesomeTable-visualization-cards div.card div.card-content a {
-  color: #fff !important;              /* white for links inside */
+  color: #fff !important;
   text-decoration: none !important;
+}
+
+/* optional: keep hover link white */
+div.awesomeTable-visualization-cards div.card div.card-content a:hover {
+  color: #fff !important;
 }
