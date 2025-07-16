@@ -1,4 +1,4 @@
-.awesomeTable-visualization-cards .card-content {
+.awesomeTable-visualization-cards .card {
   background-color: #000; /* black background */
   color: #fff;            /* white text */
   font-size: 16px;
@@ -8,7 +8,7 @@
   transition: transform 0.3s ease;
 }
 
-.awesomeTable-visualization-cards .card-content:hover {
+.awesomeTable-visualization-cards .card:hover {
   transform: scale(1.05);
   background-color: #111;
 }
