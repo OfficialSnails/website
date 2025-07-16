@@ -1,19 +1,25 @@
-.awesomeTable-visualization-cards .card {
-    border: 1px solid #fff !important; /* thin white border around the box */
-    border-radius: 10px !important;
-}
-
 .awesomeTable-visualization-cards .card-content {
-    background-color: #000 !important; /* black background */
-    color: #fff !important; /* white text */
+    background-color: #000 !important;
+    color: #fff !important;
     font-size: 16px !important;
-    border-radius: 10px !important;
+    border-radius: 2px;
     padding: 12px !important;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5) !important;
+    box-shadow: none !important;
     transition: transform 0.3s ease, background-color 0.3s ease !important;
+    border: 1px solid #fff;
 }
 
-.awesomeTable-visualization-cards .card-content:hover {
+/* Make sure the text links are white */
+.awesomeTable-visualization-cards .card-content a,
+.awesomeTable-visualization-cards .card-content a:visited,
+.awesomeTable-visualization-cards .card-content a:hover,
+.awesomeTable-visualization-cards .card-content a:active {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/* Optional: hover effect */
+.awesomeTable-visualization-cards .card:hover .card-content {
     transform: scale(1.05) !important;
     background-color: #111 !important;
 }
