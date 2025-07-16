@@ -15,13 +15,9 @@ div.awesomeTable-visualization-cards div.card:hover div.card-content {
   background-color: #111 !important;
 }
 
-/* 🔷 Force links to white */
-div.awesomeTable-visualization-cards div.card div.card-content a {
+/* Explicit text color for all children */
+div.awesomeTable-visualization-cards div.card div.card-content *,
+div.awesomeTable-visualization-cards div.card div.card-content *:hover {
   color: #fff !important;
   text-decoration: none !important;
-}
-
-/* Optional: white on hover too */
-div.awesomeTable-visualization-cards div.card div.card-content a:hover {
-  color: #fff !important;
 }
