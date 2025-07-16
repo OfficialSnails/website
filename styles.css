@@ -1,4 +1,4 @@
-.awesomeTable-visualization-cards .card {
+div.awesomeTable-visualization-cards div.card div.card-content {
   background-color: #000 !important;
   color: #fff !important;
   font-size: 16px !important;
@@ -8,7 +8,7 @@
   transition: transform 0.3s ease !important;
 }
 
-.awesomeTable-visualization-cards .card:hover {
+div.awesomeTable-visualization-cards div.card:hover div.card-content {
   transform: scale(1.05) !important;
   background-color: #111 !important;
 }
